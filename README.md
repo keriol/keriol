@@ -26,9 +26,12 @@ owns those services.
 
 ## 🏠 Home automation & IoT
 
-I also maintain a public, sanitized portfolio of my home automation work:
+I also maintain a public documentation portfolio of my home automation work:
 
 [Iot-home-automation](https://github.com/keriol/Iot-home-automation)
+
+It documents architecture, evolution, engineering decisions and real-world
+validation from the private Keriol Home proving ground.
 
 Home Assistant · MQTT · Node-RED · Python · Docker · voice assistants ·
 local-first automation.
