@@ -3,35 +3,37 @@
 Senior software developer with 20 years of experience building enterprise
 software, automation systems and connected services.
 
-## 🎩 Building Wilfred
+## 🎩 Building the Butler ecosystem
 
-[Wilfred](https://github.com/keriol/butler-wilfred) is an open-source,
-extensible Butler runtime for deterministic tools, pluggable capabilities
-and safe automation orchestration.
+I'm building an open-source Butler ecosystem around a simple principle:
+services keep owning their own domain, while the Butler connects them through
+explicit capabilities, permissions and observable execution.
 
-Its goal is simple: connect services through explicit tools, permissions
-and verification without turning the Butler itself into the software that
-owns those services.
-
-### Wilfred ecosystem
-
-- [butler-wilfred](https://github.com/keriol/butler-wilfred)  
-  Standalone Butler runtime.
-
-- [wilfred-home-assistant](https://github.com/keriol/wilfred-home-assistant)  
-  Official Home Assistant plugin for Wilfred.
+### Current public ecosystem
 
 - [butler-core](https://github.com/keriol/butler-core)  
-  Provider-neutral contracts and execution primitives.
+  Provider-neutral contracts and execution foundations. Current released baseline: `0.2.0`.
+
+- [butler-wilfred](https://github.com/keriol/butler-wilfred)  
+  Standalone reusable Butler runtime built on Core. Current Public Alpha: `0.2.2`.
+
+- [home-assistant-plugin](https://github.com/keriol/home-assistant-plugin)  
+  Reusable Home Assistant integration for Butler runtimes. The plugin is consumer-neutral and built on Butler Core contracts rather than being owned by Wilfred.
+
+Wilfred and my private Keriol runtime, **Alfred**, are sibling consumers of Butler Core. Alfred is the real-world proving ground where new capabilities, policies and interaction patterns are exercised against an operating smart home before reusable pieces are generalized and published.
+
+Home Assistant continues to own devices, integrations, dashboards and physical orchestration. Butler runtimes reason, route and invoke capabilities without becoming the smart-home platform themselves.
 
 ## 🏠 Home automation & IoT
 
-I also maintain a public documentation portfolio of my home automation work:
+I maintain a public-safe documentation portfolio of the architecture, evolution
+and engineering lessons behind Keriol Home:
 
 [Iot-home-automation](https://github.com/keriol/Iot-home-automation)
 
-It documents architecture, evolution, engineering decisions and real-world
-validation from the private Keriol Home proving ground.
+It covers reusable Butler architecture, capability maturity, verified physical
+actions, integration boundaries and the private-to-public extraction process
+without publishing the private Alfred implementation.
 
 Home Assistant · MQTT · Node-RED · Python · Docker · voice assistants ·
 local-first automation.
