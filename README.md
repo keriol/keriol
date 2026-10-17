@@ -12,13 +12,13 @@ explicit capabilities, permissions and observable execution.
 ### Current public ecosystem
 
 - [butler-core](https://github.com/keriol/butler-core)  
-  Provider-neutral contracts and execution foundations. Current released baseline: `0.2.0`.
+  Provider-neutral contracts and execution foundations. Current released baseline: `0.3.0`.
 
 - [butler-wilfred](https://github.com/keriol/butler-wilfred)  
   Standalone reusable Butler runtime built on Core. Current Public Alpha: `0.2.2`.
 
 - [home-assistant-plugin](https://github.com/keriol/home-assistant-plugin)  
-  Reusable Home Assistant integration for Butler runtimes. The plugin is consumer-neutral and built on Butler Core contracts rather than being owned by Wilfred.
+  Reusable Home Assistant integration for Butler runtimes. Current Public Alpha: `0.3.0`. The plugin is consumer-neutral and built on Butler Core contracts rather than being owned by Wilfred.
 
 Wilfred and my private Keriol runtime, **Alfred**, are sibling consumers of Butler Core. Alfred is the real-world proving ground where new capabilities, policies and interaction patterns are exercised against an operating smart home before reusable pieces are generalized and published.
 
@@ -29,7 +29,7 @@ Home Assistant continues to own devices, integrations, dashboards and physical o
 I maintain a public-safe documentation portfolio of the architecture, evolution
 and engineering lessons behind Keriol Home:
 
-[Iot-home-automation](https://github.com/keriol/Iot-home-automation)
+[Butler documentation website](https://keriol.github.io/Iot-home-automation/) · [Documentation source and engineering portfolio](https://github.com/keriol/Iot-home-automation)
 
 It covers reusable Butler architecture, capability maturity, verified physical
 actions, integration boundaries and the private-to-public extraction process
